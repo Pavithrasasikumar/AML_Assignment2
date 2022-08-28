@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor=#d4a3ae>
+    <center>
+
+        <h1>Anomaly Detection</h1>
+        <form method="POST", action="{{url_for('home')}}">
+            <b>
+                duration : <input type="text" name='a' placeholder="enter 1"><br><br>
+                num_failed_logins : <input type="text" name='b' placeholder="enter 2"><br><br>
+                is_guest_login : <input type="text" name='c' placeholder="enter 3"><br><br>
+                count : <input type="text" name='d' placeholder="enter 4"><br><br>
+                serror_rate : <input type="text" name='e' placeholder="enter 5"><br><br>
+                srv_serror_rate : <input type="text" name='f' placeholder="enter 6"><br><br>
+                rerror_rate : <input type="text" name='g' placeholder="enter 7"><br><br>
+                srv_rerror_rate : <input type="text" name='h' placeholder="enter 8"><br><br>
+                diff_srv_rate : <input type="text" name='i' placeholder="enter 9"><br><br>
+                dst_host_count : <input type="text" name='j' placeholder="enter 10"><br><br>
+                dst_host_diff_srv_rate : <input type="text" name='k' placeholder="enter 11"><br><br>
+                dst_host_srv_diff_host_rate : <input type="text" name='l' placeholder="enter 12"><br><br>
+                dst_host_rerror_rate : <input type="text" name='m' placeholder="enter 13"><br><br>
+                dst_host_srv_rerror_rate : <input type="text" name='n' placeholder="enter 14"><br><br>
+                RSTO [if flag is RSTO enter 1 else 0]: <input type="text" name='o' placeholder="enter 15"><br><br>
+                REJ[if flag is REJ enter 1 else 0] : <input type="text" name='p' placeholder="enter 16"><br><br>
+                RSTOS0[if flag is RSTOS0 enter 1 else 0] : <input type="text" name='q' placeholder="enter 17"><br><br>
+                RSTR[if flag is RSTR enter 1 else 0] : <input type="text" name='r' placeholder="enter 18"><br><br>
+                S2[if flag is S2 enter 1 else 0] : <input type="text" name='s' placeholder="enter 19"><br><br>
+                S3[if flag is S3 enter 1 else 0] : <input type="text" name='t' placeholder="enter 20"><br><br>
+                finger [if service is finger enter 1 else 0]: <input type="text" name='u' placeholder="enter 21"><br><br>
+                hostnames[if service is hostnames enter 1 else 0] : <input type="text" name='v' placeholder="enter 22"><br><br>
+                kshell[if service is kshell enter 1 else 0] : <input type="text" name='w' placeholder="enter 23"><br><br>
+                pop_3 [if service is pop_3 enter 1 else 0]: <input type="text" name='x' placeholder="enter 24"><br><br>
+                remote_job [if service is remote_job enter 1 else 0]: <input type="text" name='y' placeholder="enter 25"><br><br>
+                shell[if service is shell enter 1 else 0] : <input type="text" name='z' placeholder="enter 26"><br><br>
+                icmp[if protocol is icmp enter 1 else 0]: <input type="text" name='aa' placeholder="enter 27"><br><br>
+                logged_in : <input type="text" name='ab' placeholder="enter 28"><br><br>
+                same_srv_rate : <input type="text" name='ac' placeholder="enter 29"><br><br>
+                dst_host_srv_count : <input type="text" name='ad' placeholder="enter 30"><br><br>
+                dst_host_same_srv_rate : <input type="text" name='ae' placeholder="enter 31"><br><br>
+                SF [if flag is SF enter 1 else 0]: <input type="text" name='af' placeholder="enter 32"><br><br>
+                domain_u [if service is domain_u enter 1 else 0]: <input type="text" name='ag' placeholder="enter 33"><br><br>
+                http [if service is http enter 1 else 0]: <input type="text" name='ah' placeholder="enter 34"><br><br></b>
+                udp [if protocol is udp enter 1 else 0]: <input type="text" name='ai' placeholder="enter 35"><br><br></b>
+
+                <input type="submit" , value='predict'>
+
+
+
+
+
+
+        </form>
+
+    </center>
+
+</body>
+</html>
